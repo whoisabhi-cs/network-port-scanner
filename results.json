@@ -1,0 +1,18 @@
+[
+    {
+        "port": 902,
+        "service": "220 VMware Authentication Daemon Version 1.10: SSL Required, ServerDaemonProtocol:SOAP, MKSDisplayProtocol:VNC , , NFCSSL supported/t, \r"
+    },
+    {
+        "port": 912,
+        "service": "220 VMware Authentication Daemon Version 1.0, ServerDaemonProtocol:SOAP, MKSDisplayProtocol:VNC , , , \r"
+    },
+    {
+        "port": 445,
+        "service": "Unknown"
+    },
+    {
+        "port": 135,
+        "service": "Unknown"
+    }
+]
