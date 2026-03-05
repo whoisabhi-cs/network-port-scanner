@@ -1,68 +1,137 @@
-# Multithreaded Network Port & Service Scanner
+# 🔍 Multithreaded Port Scanner
 
-## Overview
-This project is a Python-based multithreaded TCP port scanner with service banner detection capability.
-
-It performs basic network reconnaissance by identifying open ports and retrieving service information.
+A Python-based multithreaded port scanner that scans open ports on a target system quickly and efficiently.  
+This tool is designed for learning networking fundamentals and basic cybersecurity reconnaissance.
 
 ---
 
-## Features
-- Multithreaded TCP scanning
-- Service banner detection
-- Custom port range selection
-- JSON output support
-- Command-line interface
-- Structured modular design
+## 🚀 Features
+
+- ✅ Fast multithreaded port scanning
+- ✅ Detects open ports on a target host
+- ✅ Banner grabbing for service identification
+- ✅ CLI-based tool
+- ✅ Clean terminal output
+- ✅ Beginner-friendly Python implementation
 
 ---
 
-## Technologies Used
-- Python 3
-- Socket Programming
-- Multithreading
-- Argparse
-- JSON
+## 📂 Project Structure
+
+```
+port_scanner/
+│
+├── scanner/
+│   ├── port_scanner.py
+│   └── banner_grab.py
+│
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## Installation
+## 🛠 Installation
 
-Clone the repository or download the project.
+### 1️⃣ Clone the Repository
 
-Install dependencies (if any):
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/port-scanner.git
+cd port-scanner
+```
 
+---
+
+### 2️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
 ---
 
-## Usage
+## ▶ Usage
 
-Basic scan:
+Run the scanner using:
 
-python -m scanner.port_scanner -t 127.0.0.1 -sp 1 -ep 1024
+```bash
+python -m scanner.port_scanner
+```
 
-Save results:
+Example output:
 
-python -m scanner.port_scanner -t 127.0.0.1 -sp 1 -ep 1024 -o results.json
+```
+Scanning target: 127.0.0.1
 
----
+[OPEN] Port 135
+[OPEN] Port 445
+[OPEN] Port 902
+[OPEN] Port 912
 
-## Example Output
-
-[OPEN] Port 902 → 220 VMware Authentication Daemon Version 1.10
-
----
-
-## Learning Outcomes
-- Understanding TCP socket programming
-- Multithreading implementation
-- Service banner detection techniques
-- Python modular project structuring
-- Command-line tool development
+Service Info:
+220 VMware Authentication Daemon Version 1.10
+```
 
 ---
 
-## Disclaimer
-This tool is intended for educational purposes only. 
-Use only on networks you own or have permission to test.
+## 🔍 What This Tool Does
+
+### 1️⃣ Port Scanning
+
+The scanner attempts to connect to ports on the target system and identifies which ports are open.
+
+### 2️⃣ Banner Grabbing
+
+When an open port is found, the tool tries to retrieve service information from that port.
+
+Example:
+
+```
+220 VMware Authentication Daemon Version 1.10
+```
+
+This helps identify the service running on that port.
+
+---
+
+## ⚡ Multithreading
+
+To increase scanning speed, the scanner uses multithreading so multiple ports can be scanned simultaneously.
+
+This significantly reduces scanning time compared to sequential scanning.
+
+---
+
+## 📡 Common Ports Detected
+
+Examples of services associated with common ports:
+
+| Port | Service |
+|-----|--------|
+| 21 | FTP |
+| 22 | SSH |
+| 25 | SMTP |
+| 80 | HTTP |
+| 443 | HTTPS |
+| 445 | SMB |
+| 3306 | MySQL |
+
+---
+
+## ⚠ Disclaimer
+
+This tool is intended strictly for:
+
+- Educational purposes
+- Learning cybersecurity concepts
+- Authorized testing environments
+
+Do **NOT** use this tool on systems without permission.
+
+---
+
+## 👨‍💻 Author
+
+Abhishek Sharma  
+BCA Student | Cyber Security Enthusiast  
+Passionate about cybersecurity, networking, and ethical hacking.
