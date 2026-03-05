@@ -1,4 +1,4 @@
-# 🔍 Multithreaded Port Scanner
+0# 🔍 Multithreaded Port Scanner
 
 A Python-based multithreaded port scanner that scans open ports on a target system quickly and efficiently.  
 This tool is designed for learning networking fundamentals and basic cybersecurity reconnaissance.
@@ -36,7 +36,7 @@ port_scanner/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/port-scanner.git
+git clone https://github.com/whoisabhi-cs/network-port-scanner.git
 cd port-scanner
 ```
 
